@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="tableViewForHeader">
+            <rect key="frame" x="0.0" y="0.0" width="308" height="152"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maq-0c-SwR">
+                    <rect key="frame" x="0.0" y="0.0" width="308" height="152"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                    <state key="normal" title="头视图"/>
+                    <connections>
+                        <action selector="headerViewAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="oAd-0c-Gmn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="maq-0c-SwR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HBA-Kz-FAD"/>
+                <constraint firstAttribute="trailing" secondItem="maq-0c-SwR" secondAttribute="trailing" id="dlL-99-TWj"/>
+                <constraint firstItem="maq-0c-SwR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fbh-vH-QWA"/>
+                <constraint firstAttribute="bottom" secondItem="maq-0c-SwR" secondAttribute="bottom" id="obq-Pw-YYj"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerImage" destination="maq-0c-SwR" id="hKP-k3-XuD"/>
+            </connections>
+            <point key="canvasLocation" x="-21" y="-331"/>
+        </view>
+    </objects>
+</document>
